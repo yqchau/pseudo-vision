@@ -13,17 +13,13 @@ occ_grid:
   marker: false
 
 # model config
-fcnn:
-  model_path: '/home/ychau001/ntu_race_package/ml/models/fcnn'
-  network_config_path: '/home/ychau001/ntu_race_package/ml/models/fcnn/config.yaml'
-  weights: '/home/ychau001/ntu_race_package/ml/models/fcnn/weights/2022-03-21 16:45:31.130536.pth'
-  speed: 5.5
 pseudo_vision_fcnn:
   input_size: 64
   classes: 3
   n_layers: 3
   weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
   speed: 3.0
+
 pseudo_vision_cnn:
   input_size: 64
   classes: 3
@@ -34,6 +30,7 @@ pseudo_vision_cnn:
   visualize_return_layers: true
   weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
   speed: 3.0
+
 pseudo_vision_timm:
   input_size: 64
   timm:
