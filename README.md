@@ -154,7 +154,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `LICENSE.md` for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -192,7 +192,7 @@ Project Link: [https://github.com/yqchau/pseudo-vision](https://github.com/yqcha
 [stars-url]: https://github.com/yqchau/pseudo-vision/stargazers
 [issues-shield]: https://img.shields.io/github/issues/yqchau/pseudo-vision.svg?style=for-the-badge
 [issues-url]: https://github.com/yqchau/pseudo-vision/issues
-[license-shield]: https://img.shields.io/github/license/yqchau/pseudo-vision.svg?style=for-the-badge
+[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
 [license-url]: https://github.com/yqchau/pseudo-vision/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/yuanqichau
