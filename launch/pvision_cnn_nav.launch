@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+  <rosparam command="load" file="$(find ml_nav)/config.yaml" />
+  <include file="$(find f1tenth_simulator)/launch/simulator.launch"/>
+  <node pkg='ml_nav' type='publish_occupancy_grid.py' name='occ_grid_publisher'></node>
+  <node pkg='ml_nav' type='pvision_cnn_nav.py' name='nav' output='screen'></node>
+
+</launch>

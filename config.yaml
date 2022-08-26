@@ -1,0 +1,51 @@
+# conversion to cartesian coordinates config
+scan_to_xy:
+  angle_min: -3.141592741
+  angle_max: 3.141592741
+  angle_inc: 0.005823155
+  pps: 1080
+
+# pseudo vision occupancy grid config
+occ_grid:
+  resolution: 8
+  map_size: 64
+  centered: false
+  marker: false
+
+# model config
+fcnn:
+  model_path: '/home/ychau001/ntu_race_package/ml/models/fcnn'
+  network_config_path: '/home/ychau001/ntu_race_package/ml/models/fcnn/config.yaml'
+  weights: '/home/ychau001/ntu_race_package/ml/models/fcnn/weights/2022-03-21 16:45:31.130536.pth'
+  speed: 5.5
+pseudo_vision_fcnn:
+  input_size: 64
+  classes: 3
+  n_layers: 3
+  weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
+  speed: 3.0
+pseudo_vision_cnn:
+  input_size: 64
+  classes: 3
+  return_layers:
+    cnn.0: '1st'
+    cnn.1: '2nd'
+    cnn.2: '3rd'
+  visualize_return_layers: true
+  weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
+  speed: 3.0
+pseudo_vision_timm:
+  input_size: 64
+  timm:
+    arch: "mobilenetv2_100"
+    transfer_learning: false
+    classes: 3
+    drop_rate: 0.1
+    in_chans: 1
+  return_layers:
+    blocks.0: '1st'
+    blocks.1: '2nd'
+    blocks.2: '3rd'
+  visualize_return_layers: true
+  weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
+  speed: 3.0
