@@ -18,7 +18,7 @@
 <h3 align="center">Pseudo Vision</h3>
 
   <p align="center">
-    This repository presents a way to apply LiDAR sensor to a vision based algorithm, by passing the occupancy grid as an image input.
+    Pseudo Vision: A Vision Based End-to-end Autonomous Navigation Algorithm using LiDAR Generated Occupancy Grid.
     <br />
     <a href="https://github.com/yqchau/pseudo-vision"><strong>Explore the docs »</strong></a>
     <br />
@@ -63,8 +63,8 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![Product Name Screen Shot](images/pseudo_vision.png)
-Above shows the visualizations of the model layers when the autonomous vehicle is making a decision.
+![Product Name Screen Shot](images/pvision.gif)
+The above shows the AV navigating autonomously using only a LiDAR sensor without prior knowledge of the surroundings. The top visuals show how the CNN extracts information from the occupancy grid to make decision on which direction to steer at.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

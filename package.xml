@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ml_nav</name>
+  <name>Pseudo Vision</name>
   <version>0.0.0</version>
-  <description>The f110 machine learning navigation package</description>
+  <description>Pseudo Vision: A Vision Based End-to-end Autonomous Navigation Algorithm using LiDAR Generated Occupancy Grid</description>
   <maintainer email="yuanqichau@gmail.com">yq</maintainer>
   <license>MIT</license>
 
