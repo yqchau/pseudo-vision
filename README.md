@@ -1,12 +1,12 @@
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
+ -->
 
 <!-- PROJECT LOGO -->
 <br />
@@ -62,9 +62,10 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Product Name Screen Shot](images/pvision.gif)
-The above shows the AV navigating autonomously using only a LiDAR sensor without prior knowledge of the surroundings. The top visuals show how the CNN extracts information from the occupancy grid to make decision on which direction to steer at.
+<div align="center" >
+  <img src="images/pvision.gif" alt="pvision_gif" width="500" height="500">
+</div>
+The above shows the AV navigating autonomously using only a LiDAR sensor without prior knowledge of the surroundings. The top visuals show how the CNN extracts information from the LiDAR generated occupancy grid.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
