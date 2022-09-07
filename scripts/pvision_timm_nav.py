@@ -1,10 +1,10 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 import numpy as np
 import rospy
 import torch
 import torch.nn as nn
 from ackermann_msgs.msg import AckermannDriveStamped
-from ml_nav.msg import Image
+from pseudo_vision.msg import Image
 from models import TIMM
 from torch_intermediate_layer_getter import IntermediateLayerGetter as MidGetter
 from utils import lightning_to_torch, visualize_return_layers
@@ -18,7 +18,7 @@ class PseudoVisionTimmNavigation:
         self.config = rospy.get_param("pseudo_vision_timm")
         self.input_size = (self.config["input_size"], self.config["input_size"])
         self.model = TIMM(**self.config["timm"])
-        self.model.load_state_dict(lightning_to_torch(self.config["weights"]))
+        # self.model.load_state_dict(lightning_to_torch(self.config["weights"]))
         self.model.eval()
         self.softmax = nn.Softmax(dim=1)
 

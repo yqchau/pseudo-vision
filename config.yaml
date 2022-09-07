@@ -1,9 +1,9 @@
 # conversion to cartesian coordinates config
 scan_to_xy:
-  angle_min: -3.141592741
-  angle_max: 3.141592741
-  angle_inc: 0.005823155
-  pps: 1080
+  angle_min: -2.356194
+  angle_max:  2.356194
+  angle_inc:  0.004363
+  pps: 1081
 
 # pseudo vision occupancy grid config
 occ_grid:

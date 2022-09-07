@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>Pseudo Vision</name>
+  <name>pseudo_vision</name>
   <version>0.0.0</version>
   <description>Pseudo Vision: A Vision Based End-to-end Autonomous Navigation Algorithm using LiDAR Generated Occupancy Grid</description>
   <maintainer email="yuanqichau@gmail.com">yq</maintainer>

@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import rospy
-from ml_nav.msg import Image
+from pseudo_vision.msg import Image
 from sensor_msgs.msg import LaserScan
 from utils import get_occupancy_grid, radial_to_xy
 
