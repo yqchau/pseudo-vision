@@ -10,7 +10,12 @@ occ_grid:
   resolution: 8
   map_size: 64
   centered: false
-  marker: false
+  marker: true
+
+# data colletion
+data_collection:
+  sub_topic: '/vesc/low_level/ackermann_cmd_mux/input/teleop'
+  pub_topic: '/train_data'
 
 # model config
 pseudo_vision_fcnn:
@@ -43,6 +48,8 @@ pseudo_vision_timm:
     blocks.0: '1st'
     blocks.1: '2nd'
     blocks.2: '3rd'
-  visualize_return_layers: true
-  weights: '/home/ychau001/Desktop/best-results-epoch=5-val_acc1=0.82.ckpt'
-  speed: 3.0
+  visualize_return_layers: false
+  weights: '/home/deepspeed/Downloads/best_64x64_34_1_pretrained.ckpt'
+  speed: -0.9
+  steering_angle: 0.2
+  topic: '/vesc/low_level/ackermann_cmd_mux/input/navigation'

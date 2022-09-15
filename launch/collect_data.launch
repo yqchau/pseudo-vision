@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam command="load" file="$(find pseudo_vision)/config.yaml" />
+    <arg name="save_path" default="$(find pseudo_vision)../rosbags/train_data" />
+    <node pkg='pseudo_vision' type='collect_data.py' name='data_collection' output="screen"></node>
+
+    <node pkg="rosbag" type="record" name="rosbag_data_collection" args="record -o $(arg save_path) /train_data" />
+</launch>
